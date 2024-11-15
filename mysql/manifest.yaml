@@ -9,7 +9,7 @@ spec:
     project: expense
     component: mysql
     tier: db
-   ports:
+  ports:
   - protocol: TCP
     port: 3306 # service port
     targetPort: 3306 
@@ -24,7 +24,7 @@ spec:
     project: expense
     component: mysql
     tier: db
-   ports:
+  ports:
   - protocol: TCP
     port: 3306 # service port
     targetPort: 3306
