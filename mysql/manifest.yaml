@@ -40,8 +40,8 @@ spec:
       project: expense
       component: mysql
       tier: db
-  serviceName: "mysql-headless" # this is headless service should be mentioned for statefulset
-  replicas: 2 
+  serviceName: "mysql-headless" # this is the headless service should be mentioned for statefulset
+  replicas: 2 #
   template:
     metadata:
       labels:
@@ -55,7 +55,7 @@ spec:
         volumeMounts:
         - name: mysql
           mountPath: /var/lib/mysql
-  # This is PVC definition, directly mentioned here
+  # This is PVC defnition, directly mentioned here
   volumeClaimTemplates:
   - metadata:
       name: mysql
